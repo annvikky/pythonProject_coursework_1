@@ -3,15 +3,8 @@ import os
 
 import pandas as pd
 
-from src.utils import (
-    get_greeting,
-    filter_info_by_date,
-    get_top_transactions,
-    get_currency_rates,
-    get_stock_prices,
-    read_transactions_from_excel_file,
-    filter_info_by_card,
-)
+from src.utils import (filter_info_by_card, filter_info_by_date,  # read_transactions_from_excel_file,
+                       get_currency_rates, get_greeting, get_stock_prices, get_top_transactions)
 
 settings = json.loads(
     open(

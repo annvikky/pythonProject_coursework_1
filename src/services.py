@@ -5,8 +5,6 @@ import re
 
 import pandas as pd
 
-from src.utils import read_transactions_from_excel_file
-
 logger = logging.getLogger("services")
 logger.setLevel(logging.DEBUG)
 file_handler = logging.FileHandler(

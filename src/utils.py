@@ -139,7 +139,7 @@ def get_currency_rates(currency_list):
             rates.append(
                 {"currency": currency, "rate": round(result["rates"]["RUB"], 2)}
             )
-        logger.info(f"Курсы валют на текущую дату получены.")
+        logger.info("Курсы валют на текущую дату получены.")
         return rates
     except KeyError:
         logger.error(

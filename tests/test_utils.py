@@ -1,19 +1,11 @@
 from datetime import datetime
-from io import BytesIO
-from unittest.mock import patch, MagicMock, Mock
+from unittest.mock import MagicMock, patch
 
 import pandas as pd
 import pytest
 
-from src.utils import (
-    get_greeting,
-    read_transactions_from_excel_file,
-    filter_info_by_card,
-    get_top_transactions,
-    get_currency_rates,
-    get_stock_prices,
-    filter_info_by_date,
-)
+from src.utils import (filter_info_by_card, filter_info_by_date, get_currency_rates, get_greeting, get_stock_prices,
+                       get_top_transactions, read_transactions_from_excel_file)
 
 
 @patch("pandas.read_excel")

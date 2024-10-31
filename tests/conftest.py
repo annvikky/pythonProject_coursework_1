@@ -208,10 +208,3 @@ def transaction_for_filter_without_requested_value():
     return pd.DataFrame(
         [{"Описание": "Колхоз"}, {"Описание": "МТС"}, {"Описание": "Перевод с карты"}]
     )
-
-
-# Добрый вечер!
-# [{'last_digits': '1112', 'total_spent': -46207.08, 'cashback': 462.07}, {'last_digits': '4556', 'total_spent': 533948.75, 'cashback': 5339.49}, {'last_digits': '5091', 'total_spent': -14918.16, 'cashback': 149.18}, {'last_digits': '5441', 'total_spent': -470854.8, 'cashback': 4708.55}, {'last_digits': '5507', 'total_spent': -84000.0, 'cashback': 840.0}, {'last_digits': '6002', 'total_spent': -69200.0, 'cashback': 692.0}, {'last_digits': '7197', 'total_spent': -2417014.58, 'cashback': 24170.15}]
-# [{'date': '21.03.2019', 'amount': -190044.51, 'category': 'Переводы', 'description': 'Перевод Кредитная карта. ТП 10.2 RUR'}, {'date': '21.03.2019', 'amount': 190044.51, 'category': 'Переводы', 'description': 'Перевод Кредитная карта. ТП 10.2 RUR'}, {'date': '27.07.2018', 'amount': -179571.56, 'category': nan, 'description': 'Перевод средств с брокерского счета'}, {'date': '27.07.2018', 'amount': -179571.56, 'category': nan, 'description': 'Перевод средств с брокерского счета'}, {'date': '28.07.2018', 'amount': -179571.56, 'category': nan, 'description': 'Перевод средств с брокерского счета'}]
-# {'USD': 0.010289, 'EUR': 0.009527}
-# [{'stock': 'AAPL', 'price': 231.41}, {'stock': 'AMZN', 'price': 187.83}, {'stock': 'GOOGL', 'price': 165.27}, {'stock': 'MSFT', 'price': 428.15}, {'stock': 'TSLA', 'price': 269.19}]

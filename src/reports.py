@@ -1,12 +1,8 @@
-import json
+import datetime
 import logging
 import os
-import datetime
-from functools import wraps
 
 import pandas as pd
-
-from src.utils import read_transactions_from_excel_file
 
 path_to_json_file = os.path.join(
     os.path.dirname(os.path.dirname(__file__)),
@@ -95,8 +91,7 @@ def spending_by_category(
         ].apply(lambda x: x.strftime("%d.%m.%Y"))
         logger.info("Выборка операций успешно завершена")
         count = len(report_by_category)
-        logger.info(f"Найдено {count-1} операций.")
-        # report_by_category.dropna(inplace=True)
+        logger.info(f"Найдено {count - 1} операций.")
         return report_by_category
 
     except ValueError as e:
