@@ -4,8 +4,15 @@ from unittest.mock import MagicMock, patch
 import pandas as pd
 import pytest
 
-from src.utils import (filter_info_by_card, filter_info_by_date, get_currency_rates, get_greeting, get_stock_prices,
-                       get_top_transactions, read_transactions_from_excel_file)
+from src.utils import (
+    filter_info_by_card,
+    filter_info_by_date,
+    get_currency_rates,
+    get_greeting,
+    get_stock_prices,
+    get_top_transactions,
+    read_transactions_from_excel_file,
+)
 
 
 @patch("pandas.read_excel")
