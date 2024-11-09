@@ -1,0 +1,4 @@
+{
+  "currency_list": ["USD", "EUR"],
+  "stock_list": ["AAPL", "AMZN", "GOOGL", "MSFT", "TSLA"]
+}
